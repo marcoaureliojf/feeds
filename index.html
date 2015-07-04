@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>IN JF</title>
+    <link rel="stylesheet" href="dist/framework7.min.css">
+    <link rel="stylesheet" href="dist/framework7.themes.min.css">
+    <link rel="stylesheet" href="dist/framework7.feeds.css">
+    <link rel="stylesheet" href="dist/framework7.3dpanels.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        background: #074d55; 
+        background: -moz-radial-gradient(center, ellipse cover, #a7cfdf 0%, #23538a 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, right bottom, 0px, left top, 100%, color-stop(0%,#6967a5), color-stop(50%,#2075a1), color-stop(100%,#074d55));
+        background: -webkit-radial-gradient(right bottom, ellipse cover, #6967a5 0%, #2075a1 50%, #074d55 100%);
+        background: radial-gradient(ellipse at right bottom, #6967a5 0%, #2075a1 50%, #074d55 100%);
+        
+      }
+      .panel .page, .panel .pages, .panel {
+        background: none;
+      }
+      .panel .list-block ul {
+        background: none;
+        border:none;
+      }
+      .panel .list-block .item-link {
+        color:#fff;
+      }
+      .panel .list-block .item-link:active {
+        background: rgba(255,255,255,0.2);
+      }
+      .panel .list-block .item-inner {
+        border-bottom-color:rgba(255,255,255,0.2);
+      }
+      .panel .content-block, .panel .content-block-title {
+        color:#fff;
+      }
+    </style>
+    <style>
+    #ft-movielist .ft-movielist-item-img {
+    max-width: 55px; }
+    /*# sourceMappingURL=main.css.map */
+    </style>
+      <script src="cordova.js" id="xdkJScordova_"></script> 
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="view">
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="content-block-title">Notícias</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <a href="acessa.html" data-panel="left" class="item-content item-link close-panel">
+                      <div class="item-inner left sliding">
+                        <div class="item-title">Acessa Ponto Com</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="apple.html" data-panel="left" class="item-content item-link close-panel">
+                      <div class="item-inner left sliding">
+                        <div class="item-title">A voz da Serra</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bbc.html" data-panel="left" class="item-content item-link close-panel">
+                      <div class="item-inner left sliding">
+                        <div class="item-title">G1 - Serrana</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="techcrunch.html" data-panel="left" class="item-content item-link close-panel">
+                      <div class="item-inner left sliding">
+                        <div class="item-title">A Folha</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ign.html" data-panel="left" class="item-content item-link close-panel">
+                      <div class="item-inner left sliding">
+                        <div class="item-title">Acontece em Petrópolis</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="views">
+      <div class="view view-main">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left sliding"><a href="#" data-panel="left" class="link open-panel"><i class="icon-bars icon"></i><span></span></a></div>
+            <div class="center sliding">IN JF</div>
+          </div>
+        </div>
+        <div class="pages navbar-through toolbar-through">
+          <div data-page="index" class="page">
+            <div class="page-content">
+              <div class="content-block-title">Framework7 Feeds Parser Plugin</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p>Framework7 Feeds plugin brings easy RSS feeds integration into Framework7 app.</p>
+                  <p>Plugin comes with easy and powerful JS API to integrate and customize RSS feeds. But in most cases you will not need to use JavaScript at all, like in the following examples:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="application/javascript" src="dist/proxy.js"></script>
+    <script type="application/javascript" src="dist/framework7.min.js"></script>
+    <script type="application/javascript" src="dist/framework7.feeds.js"></script>
+    <script type="application/javascript" src="dist/framework7.3dpanels.min.js"></script>
+    <script>
+      var myApp = new Framework7({
+        externalLinks: 'a.external, .feeds-page .content-block a',
+        animateNavBackIcon: true,
+        cache: true,
+        cacheDuration: 900,
+        swipePanel:'left'
+      });
+      var mainView = myApp.addView('.view-main', {
+        dynamicNavbar: true
+      });
+    </script>
+  </body>
+</html>
